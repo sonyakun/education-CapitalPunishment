@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-import uvicorn
 
 app = FastAPI()
 
@@ -16,5 +15,3 @@ def read_root(edu: str="教育", cp: str="死刑"):
   for i in range(19):
       n3.append(edu)
   return {"result": "".join(n1) + "".join(n2) + "".join(n3)}
-
-uvicorn.run(app)
