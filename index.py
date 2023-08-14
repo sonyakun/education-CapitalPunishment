@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/gen/{text1}/")
+@app.get("/gen/")
 def read_root(edu: str="教育", cp: str="死刑"):
   n1 = []
   n2 = []
